@@ -1,6 +1,63 @@
-.heading {
+.big-title {
     font-size: 100px;
+}
+.small-title {
+    font-size: 50px;
+}
+.description {
+    color: darkslategray;
 }
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    height: 100px;
+}
+header .nav ul {
+    display: flex;
+}
+header .nav ul li {
+    margin-left: 20px;
+}
+header .nav ul li a {
+    color: #fff;
+}
+main {
+    padding: 20px;
+}
+main .ourgames h1 {
+    text-align: center;
+}
+main .ourgames .games {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .ourgames .game {
+    width: 30%;
+    text-align: center;
+}
+main * {
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
