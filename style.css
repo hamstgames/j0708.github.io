@@ -1,54 +1,56 @@
 .big-title {
     font-size: 100px;
+    margin-top: 200px;
 }
-.small-title {
-    font-size: 50px;
+.small-title {font-size: 50px;}
+@media (max-width: 768px) {
+    .big-title {
+        font-size: 50px;
+        margin-top: 150px;
+    }
+    .small-title {font-size: 30px;}
 }
-.description {
-    color: rgb(0, 21, 115);
+.description {color: rgb(0, 21, 115);font-size:30px}
+@media (max-width: 768px) {
+    .description {font-size: 20px;}
 }
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
 }
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;left: 0;
 }
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .logo img {
-    height: 100px;
+header .logo img {height: 100px;}
+header .nav ul {display: flex;margin-right: 30px;}
+@media (max-width: 768px) {
+    header .logo img {
+        height: 60px;
+    }
+    header .nav ul {
+        flex-direction: column;
+        margin-right: 20px;
+    }
 }
-header .nav ul {
-    display: flex;
-}
-header .nav ul li {
-    margin-left: 20px;
-}
-header .nav ul li a {
-    color: #fff;
-}
-main {
-    padding: 20px;
-}
-main .ourgames h1 {
-    text-align: center;
-}
-main .ourgames .games {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main .ourgames .game {
-    width: 30%;
-    text-align: center;
-}
+header .nav ul li {margin-left: 20px;}
+header .nav ul li a {color: #fff;}
+main {padding: 20px;}
 main * {
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 footer {
     background-color: #333;
@@ -60,4 +62,9 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+    }
 }
