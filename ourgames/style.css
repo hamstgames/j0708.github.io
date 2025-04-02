@@ -28,17 +28,13 @@ header .nav ul li a {
 main {
     padding: 20px;
 }
-main .ourgames h1 {
-    text-align: center;
+main .ourgames{
+    align-items: center;
 }
 main .ourgames .games {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-main .ourgames .game {
-    width: 30%;
-    text-align: center;
 }
 main * {
     text-align: center;
